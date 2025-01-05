@@ -5,6 +5,9 @@ public class CrystalGazeDetector : MonoBehaviour
     [Tooltip("The maximum distance to detect crystals")]
     public float gazeDistance = 10f;
 
+    [Tooltip("Vertical offset factor for the text, based on the crystal's size")]
+    public float textHeightMultiplier = 0.5f;
+
     private Camera vrCamera;
     private GameObject activeTextObject;
 
@@ -36,10 +39,14 @@ public class CrystalGazeDetector : MonoBehaviour
                     activeTextObject = crystal.infoTextObject;
                     activeTextObject.SetActive(true);
 
-                    // Position and orient the text toward the player
-                    activeTextObject.transform.position = crystal.transform.position + Vector3.up * 0.5f;
-                    activeTextObject.transform.LookAt(vrCamera.transform);
-                    activeTextObject.transform.Rotate(0, 180, 0); // Ensure the text faces the player
+                    // Dynamically position the text based on the crystal's scale
+                    Vector3 newPosition = crystal.transform.position + Vector3.up * (crystal.transform.localScale.y * textHeightMultiplier);
+                    newPosition.x = crystal.transform.position.x + 1f;
+                    activeTextObject.transform.position = newPosition;
+
+                    // Make the text face the player
+                    activeTextObject.transform.LookAt(Camera.main.transform);
+                    activeTextObject.transform.Rotate(0, 180, 0); // Ensure it faces the player
                 }
 
                 return;
