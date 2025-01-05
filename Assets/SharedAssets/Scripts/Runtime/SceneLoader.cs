@@ -11,8 +11,7 @@ public class SceneLoader : MonoBehaviour
     public string SceneName;
     
     [SerializeField]
-    private Volume m_CurrentVolume;
-
+    privatzz
     [SerializeField]
     private Volume m_DestinationVolume;
 
