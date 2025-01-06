@@ -277,7 +277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: GardenScene
-  m_CurrentVolume: {fileID: 0}
   m_DestinationVolume: {fileID: 0}
   m_SkipLoading: 0
   ControllPanel: {fileID: 437836040}
@@ -3078,7 +3077,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: SilverScene
-  m_CurrentVolume: {fileID: 1911712333}
   m_DestinationVolume: {fileID: 715014084}
   m_SkipLoading: 0
   ControllPanel: {fileID: 1487997530}
@@ -4924,7 +4922,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: GardenScene
-  m_CurrentVolume: {fileID: 650108522}
   m_DestinationVolume: {fileID: 1050891275}
   m_SkipLoading: 0
   ControllPanel: {fileID: 1649972010}
@@ -9290,7 +9287,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: HubScene
-  m_CurrentVolume: {fileID: 0}
   m_DestinationVolume: {fileID: 650108522}
   m_SkipLoading: 1
   ControllPanel: {fileID: 0}

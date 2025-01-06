@@ -7,15 +7,13 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class SceneLoader : MonoBehaviour
 {
-    //What scene to load
+    // What scene to load
     public string SceneName;
-    
-    [SerializeField]
-    privatzz
+
     [SerializeField]
     private Volume m_DestinationVolume;
 
-    //Used for cinemachine transition
+    // Used for cinemachine transition
     [SerializeField] private bool m_SkipLoading;
 
     [SerializeField] public GameObject ControllPanel;
@@ -25,7 +23,10 @@ public class SceneLoader : MonoBehaviour
 
     private GameObject m_Root;
     private int m_LoadedIndex;
-    
+
+    // Declare m_CurrentVolume
+    private Volume m_CurrentVolume;
+
     public void Start()
     {
         if (!SceneTransitionManager.IsAvailable())
@@ -38,7 +39,6 @@ public class SceneLoader : MonoBehaviour
         {
             LoadScene();
         }
-        
     }
 
     private void OnTriggerEnter(Collider other)
