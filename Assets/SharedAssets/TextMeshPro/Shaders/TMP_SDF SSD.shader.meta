@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c2ddfa151ed0b09498741deb302c06d1
+=======
+guid: 6cc4e3100aed2324c8fd9698db5d392c
+>>>>>>> origin/origin/Nicolai
 ShaderImporter:
   externalObjects: {}
   defaultTextures: []

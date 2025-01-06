@@ -16,6 +16,8 @@ MonoBehaviour:
   m_TextWrappingMode: 1
   m_enableKerning: 1
   m_ActiveFontFeatures: 00000000
+  m_enableWordWrapping: 1
+  m_enableKerning: 1
   m_enableExtraPadding: 0
   m_enableTintAllSprites: 0
   m_enableParseEscapeCharacters: 1
