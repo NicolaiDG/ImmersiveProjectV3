@@ -38708,6 +38708,9 @@ MonoBehaviour:
   rotationSpeed: 50
   oscillationSpeed: 1
   oscillationHeight: 0.2
+  audioClip: {fileID: 8300000, guid: b9ab6783df47470478d5f82dddd7a83c, type: 3}
+  maxHearingDistance: 20
+  player: {fileID: 1918228883}
 --- !u!1001 &954864700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49460,6 +49463,9 @@ MonoBehaviour:
   rotationSpeed: 50
   oscillationSpeed: 1
   oscillationHeight: 0.2
+  audioClip: {fileID: 8300000, guid: b9ab6783df47470478d5f82dddd7a83c, type: 3}
+  maxHearingDistance: 20
+  player: {fileID: 1918228883}
 --- !u!1001 &1198502235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79944,6 +79950,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!4 &1918228883 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3120239749061861775, guid: 8e5bed6b8dcfed240a38affefd9c58f6, type: 3}
+  m_PrefabInstance: {fileID: 1396677617}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1919967568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3981477148485385435, guid: 8906daac65e644941b137644e52d9d40, type: 3}
@@ -88981,6 +88992,18 @@ PrefabInstance:
     - target: {fileID: 2909003345334110611, guid: b8cc66ba7f6013a4cb1e75f6b141c6c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 173.855
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364359804373172851, guid: b8cc66ba7f6013a4cb1e75f6b141c6c0, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1918228883}
+    - target: {fileID: 8364359804373172851, guid: b8cc66ba7f6013a4cb1e75f6b141c6c0, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b9ab6783df47470478d5f82dddd7a83c, type: 3}
+    - target: {fileID: 8364359804373172851, guid: b8cc66ba7f6013a4cb1e75f6b141c6c0, type: 3}
+      propertyPath: maxHearingDistance
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
